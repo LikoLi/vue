@@ -8,6 +8,7 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   base: process.env.BABEL_ENV,
+  linkActiveClass: 'active',
   routes: [
     {
       path: '/',
