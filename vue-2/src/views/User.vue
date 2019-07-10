@@ -1,10 +1,18 @@
 <template>
-    <div>User</div>
+    <div>
+      <button type="button" @click="add()">添加</button>
+      User
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'user'
+  name: 'user',
+  methods: {
+    add () {
+      this.$router.push('/add')
+    }
+  }
 }
 </script>
 
